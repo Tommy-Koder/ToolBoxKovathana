@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="titleTextSize">60sp</dimen>
+    <dimen name="titleTextSize">40sp</dimen>
+    <dimen name="titleTextWidth">300dp</dimen>
+    <dimen name="titleTextLength">50dp</dimen>
+    <dimen name="radioTopMargin">0dp</dimen>
+
+
+
 </resources>
