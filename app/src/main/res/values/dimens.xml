@@ -3,7 +3,12 @@
     <dimen name="titleTextSize">40sp</dimen>
     <dimen name="titleTextWidth">300dp</dimen>
     <dimen name="titleTextLength">50dp</dimen>
-    <dimen name="radioTopMargin">0dp</dimen>
+    <dimen name="radioMargin">0dp</dimen>
+    <dimen name="checkboxWidth">120dp</dimen>
+    <dimen name="checkboxLength">30dp</dimen>
+    <dimen name="radioGroupWidth">120dp</dimen>
+    <dimen name="radioGroupLength">90dp</dimen>
+
 
 
 
