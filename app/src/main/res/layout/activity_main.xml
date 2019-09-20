@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/textView"
@@ -33,10 +35,11 @@
         android:id="@+id/checkBoxHelmet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="56dp"
-        android:text="CheckBox"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="@dimen/betweenCheckBoxes"
+        android:width="@dimen/checkboxWidth"
+        android:height="@dimen/checkboxLength"
+        android:text="Helmet"
         app:layout_constraintEnd_toStartOf="@+id/checkBoxLeggings"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,11 +49,13 @@
         android:id="@+id/checkBoxArmor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="56dp"
-        android:text="CheckBox"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="@dimen/betweenCheckBoxes"
+        android:width="@dimen/checkboxWidth"
+        android:height="@dimen/checkboxLength"
+        android:text="Armor"
         app:layout_constraintEnd_toStartOf="@+id/checkBoxShoes"
-        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxHelmet" />
 
@@ -58,28 +63,33 @@
         android:id="@+id/checkBoxLeggings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="92dp"
-        android:text="CheckBox"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="@dimen/marginLeftCheckBoxes"
+        android:width="@dimen/checkboxWidth"
+        android:height="@dimen/checkboxLength"
+        android:text="Leggings"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <CheckBox
         android:id="@+id/checkBoxShoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:text="CheckBox"
+        android:layout_marginEnd="@dimen/marginLeftCheckBoxes"
+        android:text="Shoes"
+        android:width="@dimen/checkboxWidth"
+        android:height="@dimen/checkboxLength"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxLeggings" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/wBanana"
         android:layout_width="@dimen/checkboxWidth"
         android:layout_height="@dimen/checkboxLength"
         android:width="@dimen/checkboxWidth"
         android:height="@dimen/checkboxLength"
-        android:text="RadioButton"
+        android:text="Banana"
         android:layout_marginTop="@dimen/radioMargin"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup"
@@ -88,42 +98,42 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/wPickle"
         android:layout_width="@dimen/checkboxWidth"
         android:layout_height="@dimen/checkboxLength"
         android:layout_marginTop="@dimen/radioMargin"
         android:width="@dimen/checkboxWidth"
         android:height="@dimen/checkboxLength"
-        android:text="RadioButton"
+        android:text="Pickle"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/wBanana" />
 
     <RadioButton
-        android:id="@+id/radioButton3"
+        android:id="@+id/wBaguette"
         android:layout_width="@dimen/checkboxWidth"
         android:layout_height="@dimen/checkboxLength"
         android:layout_marginTop="@dimen/radioMargin"
         android:width="@dimen/checkboxWidth"
         android:height="@dimen/checkboxLength"
-        android:text="RadioButton"
+        android:text="Baguette"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/wPickle" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="@dimen/radioGroupWidth"
         android:layout_height="@dimen/radioGroupLength"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="296dp"
         android:layout_marginEnd="8dp"
         android:width="@dimen/checkboxWidth"
         android:height="@dimen/checkboxLength"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -133,7 +143,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="352dp"
-        android:text="Switch"
+        android:textSize="20sp"
+        android:text="Shield?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -144,14 +155,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="108dp"
-        android:text="Button"
+        android:text="Make it!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/character"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

@@ -8,6 +8,9 @@
     <dimen name="checkboxLength">30dp</dimen>
     <dimen name="radioGroupWidth">120dp</dimen>
     <dimen name="radioGroupLength">90dp</dimen>
+    <dimen name="betweenCheckBoxes">50dp</dimen>
+    <dimen name="marginLeftCheckBoxes">60dp</dimen>
+
 
 
 
