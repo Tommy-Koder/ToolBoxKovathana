@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Hero Builder</string>
     <string name="test">Hero Builder</string>
+    <string-array name="characters_array">
+        <item>Shrek</item>
+        <item>Sans</item>
+        <item>Bernie Sanders</item>
+    </string-array>
 </resources>
