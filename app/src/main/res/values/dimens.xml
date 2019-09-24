@@ -10,6 +10,7 @@
     <dimen name="radioGroupLength">90dp</dimen>
     <dimen name="betweenCheckBoxes">50dp</dimen>
     <dimen name="marginLeftCheckBoxes">60dp</dimen>
+    <dimen name="qTextSize">15sp</dimen>
 
 
 
