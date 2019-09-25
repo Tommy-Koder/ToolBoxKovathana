@@ -11,6 +11,10 @@
     <dimen name="betweenCheckBoxes">50dp</dimen>
     <dimen name="marginLeftCheckBoxes">60dp</dimen>
     <dimen name="qTextSize">15sp</dimen>
+    <dimen name="heroPicW">100dp</dimen>
+    <dimen name="heroPicH">100dp</dimen>
+    <dimen name="characterPicW">300dp</dimen>
+    <dimen name="characterPicH">400dp</dimen>
 
 
 
